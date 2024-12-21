@@ -7,7 +7,7 @@ import os
 parser = argparse.ArgumentParser(description="Rotary Encoder TCP Client")
 parser.add_argument("host", type=str, help="IP address of the host running the TCP server.")
 parser.add_argument("--port", type=int, default=56969, help="Port number of the TCP server (default: 56969).")
-parser.add_argument("--output", type=str, default="rotary_values.txt", help="Output file to write the rotary values.")
+parser.add_argument("--output", type=str, default="output/rotary_values.txt", help="Output file to write the rotary values.")
 parser.add_argument("--purge-interval", type=int, default=3600, help="Time in seconds to purge the output file (default: 3600 seconds / 1 hour).")
 args = parser.parse_args()
 
